@@ -1,0 +1,66 @@
+---
+---
+
+$primary-color: #3aafa9;
+$secondary-color: #17252a;
+
+.hero, .navbar {
+  &.-has-background-primary {
+    background: $primary-color !important;
+  }
+  &.-has-background-secondary {
+    background: $secondary-color !important;
+  }
+}
+
+.tag {
+  margin-bottom: 10px;
+  &.-has-background-secondary {
+    background: $secondary-color !important;
+  }
+}
+
+a.navbar-item:hover {
+  background: $secondary-color !important;
+}
+
+.profileimage{
+  > img {
+    max-width: 100%;
+  }
+
+  position: relative;
+  width: 200px;
+  border: 10px solid $secondary-color;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 769px) {
+  &.-reverse-column-order-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .navbar-menu {
+    &.-has-background-secondary {
+      background: $secondary-color !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .navbar-menu {
+    &.-has-background-secondary {
+      background: $secondary-color !important;
+    }
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .navbar-menu {
+    &.-has-background-secondary {
+      background: $primary-color !important;
+    }
+  }
+}
