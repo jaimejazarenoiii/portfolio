@@ -1,0 +1,50 @@
+<h1 class="title is-1 has-text-centered">iOS Apps</h1>
+{% for project in site.mobile_apps %}
+{% capture thecycle %}{% cycle 'odd', 'even' %}{% endcapture %}
+<section class="hero is-small {% cycle '', '-has-background-primary' %}">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-multiline is-vcentered is-mobile
+      {% cycle '-reverse-column-order-mobile', '' %}">
+        {% if thecycle == 'odd' %}
+        <div class="column is-12-mobile is-half-desktop">
+          <figure class="image">
+            <img
+              src="{{ project.image_url }}">
+          </figure>
+        </div>
+        <div class="column is-12-mobile is-half-desktop">
+          <h1 class="title has-text-centered-mobile">{{ project.name }}</h1>
+          <br>
+          <p class="has-text-centered-mobile">{{ project.description }}</p>
+          <br>
+          <p>Language / Tech / Tools: </p><br>
+          {% for tag in project.tags %}
+            <span class="tag has-text-white -has-background-secondary">{{ tag.name
+              }}</span>
+          {% endfor %}
+        </div>
+        {% else %}
+        <div class="column is-12-mobile is-half-desktop">
+          <h1 class="title has-text-white has-text-centered-mobile">{{ project.name }}</h1>
+          <br>
+          <p class="has-text-white has-text-centered-mobile">{{ project.description }}</p>
+          <br>
+          <p class="has-text-white">Language / Tech / Tools: </p><br>
+          {% for tag in project.tags %}
+            <span class="tag has-text-white -has-background-secondary">{{ tag.name
+              }}</span>
+          {% endfor %}
+        </div>
+        <div class="column is-12-mobile is-half-desktop">
+          <figure class="image">
+            <img
+              src="{{ project.image_url }}">
+          </figure>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endfor %}
