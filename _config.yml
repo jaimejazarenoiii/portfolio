@@ -18,16 +18,98 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Jaime Jazareno III | Software Engineer
+email: jaimejazarenoiii@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+twitter_username: jjazarenoiii
+github_username:  jaimejazarenoiii
+mobile_apps:
+  - name: "McDelivery PH"
+    description: >-
+      McDonald’s Philippines -- Delivery Mobile App.<br><br>
+
+      Enjoy McDo whenever, wherever.<br><br>
+
+      Get your favorite McDonald’s food delivered, just tap the McDelivery App!<br><br>
+
+      Enjoy all features to make ordering your fave McDo meals easy and hassle-free through McDelivery<br><br>
+
+      I was also part of the backend team for this project which we used GraphQL for the api.
+    image_url: "assets/images/mcdelivery.png"
+    tags:
+      - name: "Swift"
+      - name: "RxCocoa"
+      - name: "RxSwift"
+      - name: "Apollo"
+      - name: "MVVM"
+      - name: "Programmatic UI"
+  - name: "Club CHUR"
+    description: "Club CHUR is a global WiFi network that allows people and businesses to connect to the Internet."
+    image_url: "assets/images/club-chur.png"
+    tags:
+      - name: "Swift"
+      - name: "ReactiveCocoa"
+      - name: "ReactiveSwift"
+      - name: "MVVM"
+      - name: "Programmatic UI"
+  - name: "WiFi Pass"
+    description: >-
+      The WiFi PASS is based on the great CHUR Network with millions of hotspots globally and the aim to provide over 1 million hotspots in the Philippines by the end of 2020.<br><br>
+      Fast Speed<br>
+      The WiFi PASS will connect you to the fastest and best available network in range with speeds up to 200mbps.<br><br>
+
+      Unlimited Data<br>
+      No caps and no restrictions… The WiFi PASS sets your mind at ease through unlimited, secure and seamless data usage.<br><br>
+
+      Seamless Connection<br>
+      Enjoy access to WiFis in most airports, shopping centers, trains, bus stations, cafes and public areas across the entire Philippines.<br><br>
+
+      Great Value<br>
+      Keeping you connected to reliable and secure networks while roaming abroad, the WiFi PASS offers you great value for your money
+    image_url: "assets/images/wifi-pass-ph.png"
+    tags:
+      - name: "Swift"
+      - name: "ReactiveCocoa"
+      - name: "ReactiveSwift"
+      - name: "MVVM"
+      - name: "Programmatic UI"
+  - name: "VenCHUR"
+    description: >-
+      VenCHUR is giving YOU the ability to help the entire world!<br><br>
+
+      It is a global community aiming to crowdsource where essentials are and reward you for doing so.<br><br>
+
+      Live Map: The live map provides real time locations of essential items logged by the community<br><br>
+
+      Community: The dashboard provides you with real time stats every time someone logs an item on the community map<br><br>
+
+       Earn Points: Earn points while helping out your community every time you log an item!
+    image_url: "assets/images/venchur.png"
+    tags:
+      - name: "Swift"
+      - name: "ReactiveCocoa"
+      - name: "ReactiveSwift"
+      - name: "MVVM"
+      - name: "Programmatic UI"
+  - name: "CHURKit"
+    description: "An app for managing beacons and algorithms for the ChurLocationSDK framework"
+    image_url: "assets/images/churkit.png"
+    tags:
+      - name: "Swift"
+      - name: "ReactiveCocoa"
+      - name: "ReactiveSwift"
+      - name: "MVVM"
+      - name: "Programmatic UI"
+  - name: "ChurLocationSDK"
+    description: "The CHUR Location SDK for iOS is a toolset for tracking the current device's location."
+    image_url: "assets/images/package.png"
+    tags:
+      - name: "Swift"
 
 # Build settings
 theme: minima
