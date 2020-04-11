@@ -38,9 +38,11 @@ a.navbar-item:hover {
 }
 
 @media screen and (max-width: 769px) {
-  &.-reverse-column-order-mobile {
-    display: flex;
-    flex-direction: column-reverse;
+  .columns {
+    &.-reverse-column-order-mobile {
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
   .navbar-menu {
     &.-has-background-secondary {
