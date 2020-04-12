@@ -1,10 +1,10 @@
 <html>
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% include _metadata.html %}
     <title>{{ site.title }}</title>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+      href="assets/css/animate.css">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.css" />
@@ -19,8 +19,13 @@
     {% include _wave_contact.html %}
     {% include _contact.html %}
     {% include _footer.html %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="assets/javascripts/navbar.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+    <script src="assets/javascripts/scroll.js"></script>
   </body>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="assets/javascripts/navbar.js"></script>
-  <script src="assets/javascripts/scroll.js"></script>
 </html>
