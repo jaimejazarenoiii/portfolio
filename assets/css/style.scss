@@ -4,6 +4,10 @@
 $primary-color: #3aafa9;
 $secondary-color: #17252a;
 
+.wow {
+  display: hidden;
+}
+
 .hero, .navbar {
   &.-has-background-primary {
     background: $primary-color !important;
